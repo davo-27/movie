@@ -136,10 +136,11 @@ p{
 .msg{
     text-align: center;
 }
+
 @media (max-width: 576px) {
     .search-contanier{
-        display: grid;
-        grid-template-columns: 9fr 3fr;
+        display: flex;
+   justify-content: space-between;
         gap: 0.7em;
     }
 }
