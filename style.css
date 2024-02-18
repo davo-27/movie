@@ -133,9 +133,15 @@ p{
     color: #a0a0a0;
 }
 
+
 .msg{
-    text-align: center;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .msg img{
+      width: 40%;
+  }
 
 @media (max-width: 576px) {
     .search-contanier{
