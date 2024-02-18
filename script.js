@@ -9,7 +9,8 @@ let getMovie = () => {
     let url = `https://www.omdbapi.com/?t=${MovieName}&apikey=${apiKey}`;
 
     if (MovieName.length <= 0) {
-        result.innerHTML = `<h3 class="msg">Plese enter your movie</h3>`
+        result.innerHTML = `<h3 class="msg">Plese enter your movie</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/284/284270.png" class="msg">`
     } else {
         fetch(url)
             .then((res) => res.json())
@@ -42,7 +43,8 @@ let getMovie = () => {
 
 
             }).catch(error =>{
-            result.innerHTML = `<h3 class="msg">Please write movie name correctly</h3>`
+            result.innerHTML = `<h3 class="msg">Please write movie name correctly</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/284/284270.png" class="msg">`
             })
     }
 }
