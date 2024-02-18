@@ -142,12 +142,16 @@ p{
   .msg img{
       width: 40%;
   }
-
-@media (max-width: 576px) {
+@media (max-width: 778px) {
     .search-contanier{
         display: flex;
    justify-content: space-between;
-        gap: 0.7em;
     }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 25%;
+    }
+    
 }
-
