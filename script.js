@@ -41,6 +41,8 @@ let getMovie = () => {
             `
 
 
+            }).catch(error =>{
+            result.innerHTML = `<h3 class="msg">Please write movie name correctly</h3>`
             })
     }
 }
